@@ -1,0 +1,34 @@
+.demo-table {
+  width: 60%;
+  margin: auto;
+  margin-top: 25px;
+}
+
+.mat-column-demo-id {
+  padding-left: 16px;
+  font-size: 15px;
+}
+
+.mat-column-demo-name {
+  padding-left: 16px;
+  font-size: 15px;
+}
+
+.mat-column-demo-email {
+  padding-left: 16px;
+  font-size: 15px;
+}
+
+.mat-column-demo-contact {
+  padding-left: 16px;
+  font-size: 15px;
+}
+.mat-row:hover {
+  background-color:rgba(235, 233, 233, 0.5);
+  outline: none;
+}
+
+.table-row:focus {
+  background: rgb(85, 77, 77);
+  outline: none;
+}

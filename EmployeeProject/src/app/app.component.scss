@@ -1,0 +1,9 @@
+@mixin pad() {
+  color: whitesmoke;
+}
+.material-icons.md-10{
+  @include pad()
+}
+.nav-link{
+color: whitesmoke;
+}
