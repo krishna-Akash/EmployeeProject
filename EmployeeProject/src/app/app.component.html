@@ -1,17 +1,15 @@
-<nav class="navbar navbar-dark bg-primary">
-  <!-- <div class="side">
-    <a class="nav-link active" href="#"><span class="material-icons md-10">arrow_back_ios</span></a>
-    <a class="navbar-brand">Employee Management</a>
-  </div> -->
-  <ul class="nav">
-    <li class="nav-item">
-      <a class="nav-link " [routerLink]="['']"><span class="material-icons md-10">arrow_back_ios</span></a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link">Employee Management</a>
-    </li>
-  </ul>
-</nav>
-<br>
+<mat-toolbar [color]="bc">
+  <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon" [routerLink]="['']">
+    <mat-icon>arrow_back</mat-icon>
+  </button>
+  <span>Employee Management</span>
+  <span class="example-spacer"></span>
+  <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+    <mat-icon>favorite</mat-icon>
+  </button>
+  <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+    <mat-icon>share</mat-icon>
+  </button>
+</mat-toolbar>
 
 <router-outlet></router-outlet>

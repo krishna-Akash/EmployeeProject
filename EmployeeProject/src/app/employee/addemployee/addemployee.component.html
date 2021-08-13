@@ -1,0 +1,26 @@
+<div class="form-container">
+  <form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <mat-form-field >
+      <input formControlName="name" matInput placeholder="Name*">
+      <mat-error>This field is mandatory.</mat-error>
+    </mat-form-field>
+    <br>
+    <mat-form-field >
+      <input formControlName="location" matInput placeholder="Location*">
+      <mat-error>This field is mandatory</mat-error>
+    </mat-form-field>
+    <br>
+    <mat-form-field >
+      <input formControlName="role" matInput placeholder="Role*">
+      <mat-error>This field is mandatory</mat-error>
+    </mat-form-field>
+    <br>
+    <mat-form-field>
+      <input formControlName="grade" matInput placeholder="Grade*">
+      <mat-error>This field is mandatory</mat-error>
+    </mat-form-field>
+    <br>
+    <button mat-raised-button type="submit" [color]="'primary'" >Submit</button>
+    <button class="Cancel" mat-raised-button mat-dialog-close>Cancel</button>
+  </form>
+</div>

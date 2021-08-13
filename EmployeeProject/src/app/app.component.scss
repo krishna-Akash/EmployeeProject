@@ -1,9 +1,6 @@
 @mixin pad() {
-  color: whitesmoke;
+  flex: 1 1 auto;
 }
-.material-icons.md-10{
-  @include pad()
-}
-.nav-link{
-color: whitesmoke;
+.example-spacer {
+  @include pad();
 }

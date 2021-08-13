@@ -1,34 +1,53 @@
+@mixin colhead {
+  padding-left: 16px;
+  font-size: 15px;
+}
+
 .demo-table {
-  width: 60%;
+  width: 70%;
   margin: auto;
-  margin-top: 25px;
 }
 
-.mat-column-demo-id {
-  padding-left: 16px;
-  font-size: 15px;
+.mat-column-id {
+  @include colhead();
 }
 
-.mat-column-demo-name {
-  padding-left: 16px;
-  font-size: 15px;
+.mat-column-name {
+  @include colhead();
 }
 
-.mat-column-demo-email {
-  padding-left: 16px;
-  font-size: 15px;
+.mat-column-location {
+  @include colhead();
 }
 
-.mat-column-demo-contact {
-  padding-left: 16px;
-  font-size: 15px;
+.mat-column-role {
+  @include colhead();
+}
+.mat-column-grade {
+  @include colhead();
+}
+.mat-column-action {
+  @include colhead();
 }
 .mat-row:hover {
-  background-color:rgba(235, 233, 233, 0.5);
+  background-color: rgba(196, 193, 193, 0.5);
   outline: none;
 }
-
 .table-row:focus {
   background: rgb(85, 77, 77);
   outline: none;
+}
+
+.button-fix {
+  position: fixed;
+  top: auto;
+  right: 50px;
+  z-index: 5;
+  bottom: 50px;
+}
+
+.example-container {
+  height: 500px;
+  max-width: 100%;
+  overflow: auto;
 }

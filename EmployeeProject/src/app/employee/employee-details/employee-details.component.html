@@ -1,11 +1,13 @@
+
 <div class="container">
-  <div class="card">
+    <mat-card>
     <div class="card-body">
-      <h2 class="card-title">{{data[paramValue-1].name}}</h2>
+      <h2 class="card-title">{{Employeedata?.name}}</h2>
       <hr>
-      <p class="lead">Role: {{data[paramValue-1].jobTitle}}</p>
-      <p class="lead">Location: {{data[paramValue-1].place}}</p>
-      <p class="lead">Address: {{data[paramValue-1].address}}</p>
+      <p class="lead">Id: {{Employeedata?.id}}</p>
+      <p class="lead">Location: {{Employeedata?.location}}</p>
+      <p class="lead">Role: {{Employeedata?.role}}</p>
+      <p class="lead">Grade: {{Employeedata?.grade}}</p>
     </div>
-  </div>
+    </mat-card>
 </div>

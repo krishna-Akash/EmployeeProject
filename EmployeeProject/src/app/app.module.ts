@@ -6,7 +6,6 @@ import { EmployeeModule } from './employee/employee.module';
 import { MaterialModule } from './material.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
-import { EmployeesService } from './employees.service';
 
 @NgModule({
   declarations: [
@@ -15,12 +14,12 @@ import { EmployeesService } from './employees.service';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    EmployeeModule,
     MaterialModule,
     BrowserAnimationsModule,
-    HttpClientModule
+    HttpClientModule,
+    EmployeeModule
   ],
-  providers: [EmployeesService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
