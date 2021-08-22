@@ -32,11 +32,14 @@ export class EmployeeListComponent implements OnInit {
     this.router.navigate([`/employeeDetails/${id}`]);
   }
   openDialog() {
-    this.dialog.open(AddemployeeComponent, {
-      height: '350px',
-      width: '350px',
-      disableClose: true,
-    });
+    this.dialog
+      .open(AddemployeeComponent, {
+        height: '350px',
+        width: '350px',
+        disableClose: true,
+      })
+      .afterClosed()
+      .subscribe(() => this.ngOnInit());
   }
   ngOnInit(): void {
     this.employeesData

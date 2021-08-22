@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { MatDialog, MatDialogRef } from '@angular/material/dialog';
+import { EmployeesService } from '../employees.service';
 
 @Component({
   selector: 'app-addemployee',
@@ -13,10 +15,16 @@ export class AddemployeeComponent implements OnInit {
     role: new FormControl('', Validators.required),
     grade: new FormControl('', Validators.required),
   });
+  constructor(
+    private employeesData: EmployeesService,
+    public Dialog: MatDialogRef<AddemployeeComponent>
+  ) {}
   onSubmit() {
-    console.log(this.form.value);
+    this.employeesData
+      .addEmployee(this.form.value)
+      .subscribe((response) => console.log(response));
+    this.Dialog.close();
   }
-  constructor() {}
 
   ngOnInit(): void {}
 }
